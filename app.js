@@ -46,15 +46,15 @@ var x = 1 + (a *= 2); /* X будет равен 5 т.к. оператор *= э
 var a = 5;
 var b = 3;
 if (a > 0 && b > 0){
-x = a - b;
-alert(x);
+    x = a - b;
+    alert(x);
 } else if (a < 0 && b < 0){
     x = a * b;
     alert (x);
     }
   else if (a > 0 && b < 0 || a < 0 && b > 0) {
-  x = a + b;
-  alert (x);
+    x = a + b;
+    alert (x);
   }
 
 /********* Задача 4************/
@@ -104,8 +104,8 @@ case 14:
     break;
 case 15:
     alert ( 'Ваше число 15');
-    break;	
-}	
+    break;
+}
 
 
 
@@ -126,24 +126,23 @@ function div (a, b) {
 }
 
 function mult (a, b) {
-    return a + b;
+    return a * b;
 }
 /********* Задача 6************/
 
 function mathOperation(arg1, arg2, operation){
-        switch(operation){
-                case 'сложение':
-                    return arg1 + arg2;
-                    break;
-                case 'вычитание':
-                    return arg1 - arg2;
-                 break;
-             case 'деление':
-                           return arg1 / arg2;
-                 break;
-                case 'умножение':
-                    return arg1 * arg2;
-                 break;
-           }
+    switch(operation){
+        case 'сложение':
+            return arg1 + arg2;
+            break;
+        case 'вычитание':
+            return arg1 - arg2;
+            break;
+        case 'деление':
+            return arg1 / arg2;
+            break;
+        case 'умножение':
+            return arg1 * arg2;
+            break;
+        }
 }
-
